@@ -96,6 +96,7 @@ enum Token {
     ONE,
     TOMO,
     FIL,
+    KAVA,
 }
 
 #[derive(ToString, EnumString, EnumIter, EnumPropertyTrait, Debug, Copy, Clone, PartialEq)]
@@ -195,6 +196,7 @@ macro_rules! token_to_exchange_list {
             Token::ONE => "010000111010000",
             Token::TOMO => "010000111000000",
             Token::FIL => "010001111010100",
+            Token::KAVA => "010000111000000",
         }
     };
 }
